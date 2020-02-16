@@ -13,12 +13,12 @@
 <b>descBackground:</b> Background color for description </br>
 
 <h4>Sample query</h4>
-
+<code>
 Select initcap(ename) TITLE, Empno|| '<br>' || 
 'This example simply sets a class attribute to the details and let''s an external stylesheet toggle the collapsed state.
 Hello Sir
 This example simply sets a class attribute to the details and let''s an external stylesheet toggle the collapsed state.
 I''m sliding' TEXT from emp;
-
+</code>
 
 <a href ="https://apex.oracle.com/pls/apex/f?p=93690:5:710168450726746:::::"> <h4>Demo</h4></a>
