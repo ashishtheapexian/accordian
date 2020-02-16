@@ -21,4 +21,4 @@ This example simply sets a class attribute to the details and let''s an external
 I''m sliding' TEXT from emp;
 </code>
 
-<a href ="https://apex.oracle.com/pls/apex/f?p=93690:5:710168450726746:::::"> <h4>Demo</h4></a>
+<a href ="https://apex.oracle.com/pls/apex/f?p=93690:5:710168450726746:::::" target="_blank"> <h4>Demo</h4></a>
