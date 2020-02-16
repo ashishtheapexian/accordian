@@ -1,4 +1,4 @@
-# Material-cards
+# Accordian Report
 
 
 <img src="https://raw.githubusercontent.com/ashishtheapexian/accordian/master/preview.gif">
@@ -7,10 +7,10 @@
 
 { "showIcon":"fa-plus-square fa-2x","hideIcon":"fa-minus-square fa-2x","headingBackground":"red","descBackground":"blue"}
 
-showIcon : Icon class when collepsed 
-hideIcon : Icon class when uncollepsed
-headingBackground: Background color for headings
-descBackground: Background color for description 
+<b>showIcon :</b> Icon class when collepsed </br>
+<b>hideIcon :</b> Icon class when uncollepsed</br>
+<b>headingBackground:</b> Background color for headings</br>
+<b>descBackground:</b> Background color for description </br>
 
 <h4>Sample query</h4>
 
