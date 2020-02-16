@@ -12,12 +12,12 @@
   right:0;
 }
 
-.col {
-  /* width: 320px; */
-  /* float: left; */
-  margin-right:32px;
-  margin-bottom: 16px;
-}
+/* .col { */
+  /* /* width: 320px; */ */
+  /* /* float: left; */ */
+  /* margin-right:32px; */
+  /* margin-bottom: 16px; */
+/* } */
 .c3 {
   margin-right:0;
 }
@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   margin: 0;
-  background-color: rgb(228,10,85);
+  /* background-color: rgb(228,10,85); */
   background-image: linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
   background-image: -o-linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
   background-image: -moz-linear-gradient(bottom, rgb(228,10,85) 14%, rgb(255,36,111) 57%);
@@ -51,7 +51,7 @@ h3 a {
   /* background: url("https://raw.githubusercontent.com/ashishtheapexian/accordian/master/icon.png") 15px 13px no-repeat; */
   display: block;
   padding: 10px;
-  padding-left: 32px;
+  /* padding-left: 32px; */
   margin: 0;
   color: #fff;
   text-decoration: none;
@@ -141,10 +141,101 @@ only screen and (min-device-pixel-ratio : 1.5) {
   }
 }
 
-/* @media */
-/* only screen and (-webkit-min-device-pixel-ratio : 1.5), */
-/* only screen and (min-device-pixel-ratio : 1.5) { */
-  /* body { */
-    /* padding: 0 12px; */
-  /* } */
-/* } */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+.css3-animated-example{
+	width:98%;
+}
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+.css3-animated-example{
+	width:98%;
+}
+}

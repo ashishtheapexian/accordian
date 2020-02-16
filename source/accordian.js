@@ -140,7 +140,6 @@ var accordian = (function () {
         return (div);
     }
 
-    
     /************************************************************************
      **
      ** Used to render the html into region
@@ -152,14 +151,19 @@ var accordian = (function () {
         parent.parent().css("overflow", "inherit");
 
         var container = drawContainer(parent); // wrapper
-        var row = container ;//drawRow(container);
+        var row = container; //drawRow(container);
         // var row = container;
         var cardNum = 0;
         var zindex = 10;
         var releaveHideIcon = pConfigJSON.releaveHideIcon;
 
         // cardNum = 12 / pConfigJSON.cardWidth;
-
+        var heading_background = pConfigJSON.headingBackground;
+        var l_description_background = pConfigJSON.descBackground;
+		var l_showIcon = pConfigJSON.showIcon;
+		var l_hideIcon = pConfigJSON.hideIcon;
+		var l_accordian = pConfigJSON.accordian;
+		console.log(l_accordian);
         $.each(pData, function (idx, data) {
             cardNum = cardNum + pConfigJSON.cardWidth;
 
@@ -168,51 +172,60 @@ var accordian = (function () {
 
             var headings = $("<h3></h3>");
             // cols.addClass('columns col col-'+cardNum+' apex-col-auto');
-			headings.html(data.TITLE);
+            headings.html(data.TITLE);
             headings.addClass('title_head');
-			
-			
-			var heading_icons = $('<i class ="fa fa-angle-down rotate-icon"></i>');
-			headings.append(heading_icons);
+            $(headings).css('background', heading_background);
+
+            var heading_icons = $('<i class="fa '+l_showIcon+'" style="vertical-align: baseline !important; font-size: inherit;"></i>');
+            headings.prepend(heading_icons);
 
             var l_container = $("<div></div>");
-			l_container.addClass('content_text');
-						
-			var l_content = $("<div></div>");
+            l_container.addClass('content_text');
+
+            var l_content = $("<div></div>");
             l_content.addClass("content");
-			
+            $(parent).children('.css3-animated-example').find('div.content').css('background', l_description_background);
+
             var l_text = $("<p></p>");
             l_text.addClass("text_content");
-			l_text.html(data.TEXT);
+            l_text.html(data.TEXT);
 
             // var card_reveal_content_para = $("<p></p>");
             // card_reveal_content_para.html(data.CARD_REVEAL_CONTENT);
             // card_reveal_content_para.addClass("ashish_show_more_content")
-			l_content.append(l_text);
-			l_container.append(l_content);
+            l_content.append(l_text);
+            l_container.append(l_content);
 
-            
             row.append(headings);
-			row.append(l_container);
-			       
+            row.append(l_container);
+
         });
-		 $(".css3-animated-example").collapse({
-		  header: "> div > h3",
-          accordion: true,
-          persist: true,
-          open: function() {
-            this.addClass("open");
-            this.css({ height: this.children().outerHeight() });
-          },
-          close: function() {
-            this.css({ height: "0px" });
-            this.removeClass("open");
-          }
+        $(parent).children(".css3-animated-example").each(function () {
+            $(this).collapse({
+                header: "> div > h3",
+                accordion: true,
+                persist: l_accordian,
+                open: function () {
+                    this.addClass("open");
+                    this.prev().children('a').children('i').attr('class', 'fa '+l_hideIcon);
+                    this.css({
+                        height: this.children().outerHeight()
+                    });
+                },
+                close: function () {
+                    this.css({
+                        height: "0px"
+                    });
+                    this.prev().children('a').children('i').attr('class', 'fa '+l_showIcon);
+                    this.removeClass("open");
+                }
+            });
+
         });
-		
-		$('.content_text.open').css("background", "#aaffff");
-		 $('.content_text.open').css("height", "auto");
-			
+
+        $('.content_text.open').css("background", "#aaffff");
+        $('.content_text.open').css("height", "auto");
+
     }
     /************************************************************************
      **
