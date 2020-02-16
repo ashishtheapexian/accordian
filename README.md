@@ -1,7 +1,7 @@
 # Material-cards
 
 
-<img src="https://raw.githubusercontent.com/ashishtheapexian/Material-cards/master/Preview.gif">
+<img src="https://raw.githubusercontent.com/ashishtheapexian/accordian/master/preview.gif">
 
 <h4>Card Attributes</h4>
 
