@@ -13,7 +13,7 @@
 <b>descBackground:</b> Background color for description </br>
 
 # Attributes
-#TITLE#
+#TITLE# <br>
 #TEXT#
 
 <h4>Sample query</h4>
