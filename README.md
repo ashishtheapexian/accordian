@@ -7,8 +7,8 @@
 
 { "showIcon":"fa-plus-square fa-2x","hideIcon":"fa-minus-square fa-2x","headingBackground":"red","descBackground":"blue"}
 
-<b>showIcon :</b> Icon class when collepsed </br>
-<b>hideIcon :</b> Icon class when uncollepsed</br>
+<b>showIcon :</b> Icon class when collapsed </br>
+<b>hideIcon :</b> Icon class when uncollapsed</br>
 <b>headingBackground:</b> Background color for headings</br>
 <b>descBackground:</b> Background color for description </br>
 
