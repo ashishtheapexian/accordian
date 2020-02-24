@@ -12,6 +12,10 @@
 <b>headingBackground:</b> Background color for headings</br>
 <b>descBackground:</b> Background color for description </br>
 
+# Attributes
+#TITLE#
+#TEXT#
+
 <h4>Sample query</h4>
 <code>
 Select initcap(ename) TITLE, Empno|| '<br>' || 
