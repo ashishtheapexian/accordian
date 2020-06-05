@@ -12,7 +12,9 @@
   "author" : {
     "name" : "Ashish Sahay",
     "email" : "ashishk392@gmail",
-    "url" : "https://www.ashishsahay.com"
+    "url" : "https://www.ashishsahay.com",
+    "twitter": "imapexianashish",
+    "donationUrl": "https://www.patreon.com/theapexian"
   },
   "repository" : {
     "type" : "git",
