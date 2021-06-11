@@ -21,6 +21,7 @@
 #TEXT#
 
 <h4>Sample query</h4>
+
 ```SQL
 SELECT INITCAP(ename) TITLE, Empno|| '<br>' || 
 'This example simply sets a class attribute to the details and let''s an external stylesheet toggle the collapsed state.
